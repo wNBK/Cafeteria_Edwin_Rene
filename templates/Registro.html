@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<STYLE>
+    *
+{
+  margin: 0;
+  padding: 0;
+}
+table
+{
+  margin: auto;
+  background-color: #ebebeb;
+  border-radius: 20px;
+  padding: 20px;
+}
+body{
+  font-weight: 900;
+  font-size: 125%;
+  background-size: cover;
+  background-attachment: fixed; }
+
+.button
+{
+  text-align: center;
+  color: white;
+  width: 300px;
+}
+</STYLE>
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario Proyecto</title>
+</head>
+<script type="text/javascript" src="js/formularioproyecto.js">
+</script>
+
+<body>
+  <form  action="php/formularioproyecto.php " method="post" name="Formulario" onsubmit="return Valida(this);">
+    <table border=0 align="center" >
+      <caption><h2 style="color:030803">Datos personales</h2></caption>
+      <tr>
+        <td> Nombre:</td>
+  			<td><input type="text" name="nombre" id="nombre" required></td><br>
+  		</tr>
+      <tr>
+        <td><br>Apellidos:</td>
+  			<td><br><input type="text" name="apellidos" id="apellidos"  required><br></td>
+  		</tr>
+
+      <tr>
+        <td><br>Puesto:<br></td>
+  			<td><br><input type="text" name="puesto"  required><br></td>
+  		</tr>
+
+      <tr>
+        <td><br>Correo:<br></td>
+  			<td><br><input type="email" name="correo"  required><br></td>
+  		</tr>
+
+        <td  class="button" colspan="2">  <br><input type="submit" name="enviar" value="Enviar"/><br></td>
+  		</tr>
+  </table>
+</form>
+</body>
+</html>

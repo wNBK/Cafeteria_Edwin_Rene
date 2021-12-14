@@ -1,0 +1,66 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<STYLE>
+    *
+{
+  margin: 0;
+  padding: 0;
+}
+table
+{
+  margin: auto;
+  background-color: rgba(80, 80, 80, 0.3);
+  border-radius: 20px;
+  padding: 20px;
+}
+body{
+  font-weight: 900;
+  font-size: 125%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center, right;
+  background-repeat: no-repeat;}
+
+{
+  text-align: center;
+  color: white;
+  width: 350px;
+}
+
+</STYLE>
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario Proyecto</title>
+</head>
+<link rel="stylesheet" href="{% static 'css/Login.css' %}">
+
+<script type="text/javascript" src="js/formularioproyecto.js">
+</script>
+
+<body>
+  <form  method="post">
+      {%  csrf_token %}
+    <table border=0 align="center" >
+      <caption><h2 style=""> Iniciar sesion</h2></caption>
+      <tr>
+        <td> Nombre:</td>
+  			<td><input type="text" name="username" required></td><br>
+  		</tr>
+      <tr>
+        <td><br>Password:</td>
+  			<td><br><input type="password" name="password"required><br></td>
+
+        <button type="sumbit">Iniciar sesion</button>
+
+      <tr>
+
+  		</tr>
+  </table>
+</form>
+
+
+</body>
+</html>

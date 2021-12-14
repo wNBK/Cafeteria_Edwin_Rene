@@ -1,0 +1,25 @@
+*
+{
+  margin: 0;
+  padding: 0;
+}
+table
+{
+  margin: auto;
+  background-color: rgba(80, 80, 80, 0.3);
+  border-radius: 20px;
+  padding: 20px;
+}
+body{
+  font-weight: 900;
+  font-size: 125%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center, right;
+  background-repeat: no-repeat;}
+
+{
+  text-align: center;
+  color: white;
+  width: 350px;
+}

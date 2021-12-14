@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <STYLE>
+ *
+{
+  margin: 0;
+  padding: 0;
+}
+body
+{
+  height: 100vh;
+  background:#F9F7F6;
+
+}
+header{
+  text-align: center;
+  font-size: 40px;
+  font-weight:bold;
+}
+section
+{
+  display: flex;
+  flex-wrap:wrap;
+  margin: auto;
+  height: 93%;
+  width: 95%;
+}
+article{
+  height: 80%;
+  width: 30%;
+  background: #EAE7E6;
+  margin: auto;
+}
+img{
+  display:block;
+  margin:auto;
+}
+h1{
+  text-align: center;
+  font-size: 20px;
+}
+h2{
+  text-align: center;
+  font-size: 18px;
+}
+
+#button {
+ padding: 0;
+ }
+ #button li {
+ display: inline;
+ }
+ #button li a {
+ font-family: Arial;
+ font-size: 15px;
+ text-decoration: none;
+ float: left;
+ padding: 25px;
+ background-color: #6470f5;
+ color: #fff;
+ width: 29.4%;
+ }
+
+ #button li a:hover {
+  background-color: #3544e8;
+  margin-top: -2;
+  padding-bottom: 25px;]
+  }
+    </STYLE>
+  <meta charset="UTF-8">
+  <title> {%block title %} {% endblock %}</title>
+</head>
+<body>
+
+
+
+  <header id="header1">
+    <ul id="button">
+     <li><a href="">Inicio</a></li>
+     <li><a href="plantillaLogin/">Inventario</a></li>
+     <li><a href="">Contacto</a></li>
+   </ul>
+   <br>Catalogo</br>
+ </header>
+
+
+
+    <section>
+    <article><br><h1>Cafe Starbucks</h1><br><img src="{% static "imagenes/cafe1.jpg" %}"></br><br><h2>$60.00</h2></br></article>
+    <article><br><h1>Pastel Chocolate</h1><br><img src="{% static "imagenes/pastel.jpg" %}"></br><br><h2>$60.00</h2></br></article>
+    <article><br><h1>Cafe Granel</h1><br><img src="{% static "imagenes/cagegranel.jpg" %}"></br><br><h2>$60.00</h2></br></article>
+    </section>
+    <section>
+    <article><br><h1>Chilaquiles Rojos</h1><br><img src="{% static "imagenes/chila.jpg" %}"></br><br><h2>$60.00</h2></br></article>
+    <article><br><h1>Cafe frio</h1><br><img src="{% static "imagenes/cfrio.jpg" %}"></br><br><h2>$60.00</h2></br></article>
+    <article><br><h1>Galon cafe americano</h1><br><img src="{% static "imagenes/am.jpg" %}"></br><br><h2>$60.00</h2></br></article>
+    </section>
+
+
+</body>
+</html>
